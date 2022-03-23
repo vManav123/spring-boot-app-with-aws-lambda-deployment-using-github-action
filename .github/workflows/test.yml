@@ -9,7 +9,8 @@ on:
       - main
 jobs:
   #Test's job
-  tests:
+  tests: 
+    needs: build
     name: Unit tests
     #Run on Ubuntu using the latest version
     runs-on: ubuntu-latest
