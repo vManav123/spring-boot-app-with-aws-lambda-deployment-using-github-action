@@ -60,7 +60,8 @@ jobs:
         run: mvn -B test
 
   sonar:
-    name: Build
+    needs: tests
+    name: Sonar Analysis
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
