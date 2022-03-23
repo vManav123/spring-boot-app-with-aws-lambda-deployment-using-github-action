@@ -19,11 +19,6 @@ public class FunctionImpl {
     @Autowired
     private TrainRepository trainRepository;
 
-    public static void main(String[] args) {
-        FunctionImpl functionsImpl = new FunctionImpl();
-        System.out.println("health : "+functionsImpl.healthCheck().get().toString());
-    }
-
     @Bean
     public Supplier<String> healthCheck()
     {
