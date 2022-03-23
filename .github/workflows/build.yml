@@ -8,8 +8,8 @@ on:
     branches:
       - main
 jobs:
-  #Test's job
-  tests:
+  #Build job
+  build:
     name: Build Application
     #Run on Ubuntu using the latest version
     runs-on: ubuntu-latest
