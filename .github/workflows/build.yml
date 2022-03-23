@@ -1,5 +1,5 @@
 #Workflow name
-name: Build and Test Application
+name: Test Application
 on:
   #Manually trigger workflow runs
   workflow_dispatch:
